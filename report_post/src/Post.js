@@ -1,33 +1,40 @@
 import React from 'react'
 import "./App.css";
-function Post() {
-  return (
+
+function Post(props) {
+  const post = props.post;
+  const setOpenModal = props.setOpenModal;
+  const setpostId = props.setpostId;
+  return (  
       <div className='Post-card'>
             <header>
 
               <div className="Post-user">
                 <div className="Post-user-profilepicture">
-                  <img src="https://i.pinimg.com/736x/aa/ab/5b/aaab5b13d453b6e4d97b215ab7df7f47--itachi-akatsuki-naruto-uzumaki.jpg" alt="John D. Veloper" />
+                  <img src="https://i.pinimg.com/736x/aa/ab/5b/aaab5b13d453b6e4d97b215ab7df7f47--itachi-akatsuki-naruto-uzumaki.jpg" alt="" />
                 </div>
 
                 <div className="Post-user-nickname">
-                  <span>Itachi_Uchiha</span>
+                  <span>{post.username}</span>
                 </div>
 
                 <div className="gap"></div>
 
-                <div className="Post-menu">
+                <button className="Post-menu" onClick={() => {
+                  setOpenModal(true);
+                  setpostId(post.post_id);
+                }}>
                     <span className='menu-dot'></span>
                     <span className='menu-dot'></span>
                     <span className='menu-dot'></span>
-                </div>
+                </button>
               </div>
 
             </header>
 
             <div className="Post-image">
               <div className="Post-image-bg">
-                <img alt="Icon Living" src="https://static.marriedgames.com.br/82bae879-naruto-classico-e-naruto-shippuden-fillers.jpg" />
+                <img alt="Icon Living" src={`${post.post_url}`} />
               </div>
             </div>
 
@@ -40,10 +47,9 @@ function Post() {
             </div>
 
             <div className="Post-caption">
-              <strong>Itachi_Uchiha</strong> Visit to konoha!
+              <strong>{post.username}</strong> {post.caption}
             </div>
       </div>
-
   )
 }
 
