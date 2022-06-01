@@ -4,6 +4,7 @@
 <img width="1440" alt="Screen Shot 2022-06-01 at 7 24 40 PM" src="https://user-images.githubusercontent.com/84831188/171422731-4bb5f4b9-e4c2-45ae-ba42-bfd3e722d0b2.png">
 
 ## Functionality to report a post!
+### Tell us why you reported the post:)
 <img width="1440" alt="Screen Shot 2022-06-01 at 7 24 51 PM" src="https://user-images.githubusercontent.com/84831188/171423188-421927ae-e8f2-4bc8-a81c-6f09655b4ff6.png">
 
 
