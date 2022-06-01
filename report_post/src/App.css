@@ -1,0 +1,150 @@
+/* .container{
+
+} */
+.Post-card {
+
+    width : 40%;
+    border : 1px solid gray;
+    border-radius: 8px;
+    margin : 2em auto;
+
+}
+
+.Post {
+
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    margin-bottom: 60px;
+
+  }
+
+.Post-user {
+
+  display: flex;
+  padding: 16px;
+  align-items: center;
+
+}
+
+.Post-user-profilepicture {
+
+  width: 30px;
+  height: 30px;
+
+}
+
+.Post-user-profilepicture img {
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+}
+
+.Post-user-nickname {
+
+  margin-left: 12px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+
+}
+
+.Post-image-bg {
+
+  background-color: #efefef;
+
+}
+
+.Post-image img {
+
+  display: block;
+    width: 100%;
+
+}
+
+.Post-caption {
+
+  padding: 8px 20px;
+
+}
+
+.Post-caption strong {
+
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+
+}
+.gap{
+
+  margin:auto;
+
+}
+.Post-menu{
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Post-menu:hover{
+
+  cursor: pointer;
+
+}
+
+.menu-dot{
+
+  width: 5px;
+  height: 5px;
+  display: block;
+  background: black;
+  border-radius: 50%;
+  margin: 0 1px;
+  padding: 0;
+  
+}
+
+.icons{
+
+  margin: 1em 0;
+  padding : 0 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.icons i{
+
+  margin : 0 0.3em;
+  cursor: pointer;
+
+}
+.vjs-fade-out {
+
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .Post-card { width : 80%; }
+}
+
+
+@media only screen and (min-width: 600px) {
+  .Post-card { width : 70%; }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .Post-card { width : 60%; }
+} 
+
+@media only screen and (min-width: 992px) {
+  .Post-card { width : 50%; }
+} 
+
+@media only screen and (min-width: 1200px) {
+  .Post-card { width : 40%; }
+}
