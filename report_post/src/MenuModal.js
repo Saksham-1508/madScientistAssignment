@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
+import {toast} from 'react-toastify';
 function MenuModal({ post_id, closeModal, setpostId }) {
     const [report, setReport] = useState(false)
     const [reason, setReason] = useState("")
@@ -9,6 +10,7 @@ function MenuModal({ post_id, closeModal, setpostId }) {
             console.log("Post Reported");
             closeModal(false);
             setReport(false);
+            toast('Post Reported');
         });
         
     }

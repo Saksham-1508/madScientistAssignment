@@ -3,6 +3,8 @@ import "./App.css"
 import {useState, useEffect} from 'react';
 import Axios from "axios";
 import MenuModal from './MenuModal';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [posts, setposts] = useState([]);
@@ -32,6 +34,7 @@ function App() {
             );
           })}  
       </div>
+      <ToastContainer/>
       </>
   );
 }
